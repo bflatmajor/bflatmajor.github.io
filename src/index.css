@@ -1,7 +1,9 @@
 html,
 body {
     height: 100%;
-    background: white;
+}
+html {
+    color-scheme: light dark;
 }
 body {
     display: flex;
@@ -35,12 +37,6 @@ body {
     }
     &.waiting::after {
         animation: cursor 1s steps(1) infinite;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    html {
-        filter: invert(1);
     }
 }
 
